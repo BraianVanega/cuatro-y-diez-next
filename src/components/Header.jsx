@@ -11,11 +11,11 @@ function Header() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <img
+          {/* <img
             src="/images/Logo.png"
             alt="Logo Cuatro y 10"
             className="h-12 w-auto"
-          />
+          /> */}
         </div>
 
         {/* Menú de escritorio */}
