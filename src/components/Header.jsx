@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  // const [tiendaOpen, setTiendaOpen] = useState(false);
+  const [tiendaOpen, setTiendaOpen] = useState(false);
 
   return (
     <header className="bg-blue-500 shadow-md fixed top-0 w-full z-50">
