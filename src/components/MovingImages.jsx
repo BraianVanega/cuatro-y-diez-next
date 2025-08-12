@@ -3,11 +3,11 @@ import React, { useState, useEffect } from "react";
 
 const images = [
   "/images/gin.png",
-  "/images/Ginfuego.jpg",
-  "/images/sirviendo.jpg",
-  "/images/arena.jpg",
+  // "/images/Ginfuego.jpg",
+  // "/images/sirviendo.jpg",
+  // "/images/arena.jpg",
   "/images/arena2.jpeg",
-  "/images/toalla.jpg",
+  // "/images/toalla.jpg",
 ];
 
 export default function MovingImages() {
