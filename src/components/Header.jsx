@@ -1,20 +1,23 @@
 "use client";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [tiendaOpen, setTiendaOpen] = useState(false);
+  // const [tiendaOpen, setTiendaOpen] = useState(false);
 
   return (
     <header className="bg-blue-500 shadow-md fixed top-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <img
+          <Image
             src="/images/Logo.png"
             alt="Logo Cuatro y 10"
             className="h-12 w-auto"
+            width={100}
+            height={100}
           />
         </div>
 
