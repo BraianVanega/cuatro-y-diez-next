@@ -37,6 +37,14 @@ export default function MovingImages() {
             className="w-full h-screen object-contain flex-shrink-0 bg-transparent"
           />
         ))} */}
+
+        {/* <Swiper>
+          {images.map((src, i) => (
+            <SwiperSlide key={i}>
+              <img src={src} alt={`Imagen ${i + 1}`} />
+            </SwiperSlide>
+          ))}
+        </Swiper> */}
       </div>
     </div>
   );
