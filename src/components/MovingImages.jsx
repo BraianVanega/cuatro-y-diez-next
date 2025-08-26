@@ -1,13 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import {Swiper, SwiperSlide} from "swiper/react";
 
 const images = [
-  // "/images/gin.png",
-  // "/images/Ginfuego.jpg",
-  // "/images/sirviendo.jpg",
-  // "/images/arena.jpg",
-  // "/images/arena2.jpeg",
-  // "/images/toalla.jpg",
+  "/images/brindando.jpeg",
+  "/images/servido.jpeg"
 ];
 
 export default function MovingImages() {
@@ -29,23 +26,16 @@ export default function MovingImages() {
         className="flex transition-transform duration-1000 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
-        {/* {images.map((src, i) => (
-          <img
-            key={i}
-            src={src}
-            alt={`Imagen ${i + 1}`}
-            className="w-full h-screen object-contain flex-shrink-0 bg-transparent"
-          />
-        ))} */}
 
-        {/* <Swiper>
+        <Swiper>
           {images.map((src, i) => (
             <SwiperSlide key={i}>
               <img src={src} alt={`Imagen ${i + 1}`} />
             </SwiperSlide>
           ))}
-        </Swiper> */}
+        </Swiper>
       </div>
     </div>
   );
 }
+

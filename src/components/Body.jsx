@@ -1,3 +1,5 @@
+import { Images } from "lucide-react";
+
 export default function Body() {
   return (
     <section id="productos" className="max-2-7xl mx-auto px-6 py-16">
@@ -8,6 +10,7 @@ export default function Body() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {/* Primer producto*/}
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
+          <div className="relative w-full h-64">
           {/* <img
             src="/images/fondo.jpeg"
             alt="Botella"
@@ -16,6 +19,7 @@ export default function Body() {
           <div className="p-4 text-center">
             <h3 className="text-xl font-semibold">Botella de 750cc</h3>
             <p className="text-gray-600 mt-2">$15.000</p>
+          </div>
           </div>
         </div>
         {/*Segundo producto*/}

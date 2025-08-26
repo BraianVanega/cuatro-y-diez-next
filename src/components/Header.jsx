@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,7 +31,7 @@ function Header() {
           <a href="#nosotros" className="hover:text-white">
             Nosotros
           </a>
-          <a href="#contacto" className="hover:text-white">
+          <a href="/contacto" className="hover:text-white">
             Contacto
           </a>
         </nav>
