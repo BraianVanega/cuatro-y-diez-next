@@ -4,7 +4,6 @@ import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   // const [tiendaOpen, setTiendaOpen] = useState(false);
@@ -15,7 +14,7 @@ function Header() {
         {/* Logo */}
         <div className="flex items-center">
           <Image
-            src="/images/Logo.png"
+            src="/images/logo.png"
             alt="Logo Cuatro y 10"
             className="h-12 w-auto"
             width={100}
