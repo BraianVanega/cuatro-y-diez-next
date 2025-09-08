@@ -13,13 +13,15 @@ function Header() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <Image
-            src="/images/logo.png"
-            alt="Logo Cuatro y 10"
-            className="h-12 w-auto"
-            width={100}
-            height={100}
-          />
+        <Link href="/">
+        <Image
+        src="/images/logo.png"
+        alt="Logo Cuatro y 10"
+        className="h-12 w-auto cursor-pointer"
+        width={100}
+        height={100}
+        />
+        </Link>
         </div>
 
         {/* Menú de escritorio */}
@@ -27,12 +29,12 @@ function Header() {
           <a href="#productos" className="hover:text-white">
             Productos
           </a>
-          <a href="#nosotros" className="hover:text-white">
-            Nosotros
+          <a href="#quienes-somos" className="hover:text-white">
+            Quiénes Somos
           </a>
-          <a href="/contacto" className="hover:text-white">
-            Contacto
-          </a>
+          <Link href="/contacto" className="hover:text-white">
+          Contacto
+          </Link>
         </nav>
 
         {/* Botón acceder */}
@@ -53,15 +55,15 @@ function Header() {
       {/* Menú mobile */}
       {menuOpen && (
         <div className="md:hidden bg-white shadow-md px-6 pb-4">
-          <a href="#productos" className="block py-2 border-b">
+          <a href="#productos" className="block py-2 border-b text-gray-800">
             Productos
           </a>
-          <a href="#nosotros" className="block py-2 border-b">
-            Nosotros
+          <a href="#quienes-somos" className="block py-2 border-b text-gray-800">
+            Quiénes Somos
           </a>
-          <a href="#contacto" className="block py-2 border-b">
+          <Link href="/contacto" className="block py-2 border-b text-gray-800">
             Contacto
-          </a>
+          </Link>
 
           {/* Acceder (mobile) */}
           <div className="mt-4">
