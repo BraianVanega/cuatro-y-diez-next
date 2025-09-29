@@ -1,11 +1,9 @@
 "use client";
 import React from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-
-// Import Swiper styles
 import "swiper/css";
+import Image from "next/image";
 const images = ["/images/brindando.jpeg", "/images/servido.jpeg"];
 
 export default function MovingImages() {
@@ -14,22 +12,25 @@ export default function MovingImages() {
       <Swiper
         modules={[Autoplay]}
         spaceBetween={10}
-        slidesPerView={1}
+        slidesPerView={1.2}
         allowTouchMove={true}
         loop
         autoplay={{
-          delay: 3000,
+          delay: 100000,
           disableOnInteraction: false,
         }}
         className="w-full h-full"
       >
         {images.map((src, i) => (
           <SwiperSlide key={i}>
-            <img
-              src={src}
-              alt={`Imagen ${i + 1}`}
-              className="w-full h-full object-cover"
-            />
+            <div className="overflow-hidden aspect-[16/9]">
+              <Image
+                src={src}
+                fill
+                alt={`Imagen ${i + 1}`}
+                className="w-full h-full object-cover"
+              />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
