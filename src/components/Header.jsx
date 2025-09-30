@@ -47,12 +47,12 @@ function Header() {
         </div>
 
         <nav className="hidden md:flex space-x-6 items-center">
-          {/* <a href="#productos" className="hover:text-white">
+          <a href="#productos" className="hover:text-white">
             Productos
           </a>
           <a href="#quienes-somos" className="hover:text-white">
             Quiénes Somos
-          </a> */}
+          </a>
           <Link href="/contacto" className="hover:text-white">
             Contacto
           </Link>
