@@ -5,12 +5,12 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen font-sans bg-blue-100">
       <Header />
-      <main>
-      <MovingImages />
+      <main className="pt-32">
+        <MovingImages />
         <Body />
-        <QuienesSomos/>
+        <QuienesSomos />
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
