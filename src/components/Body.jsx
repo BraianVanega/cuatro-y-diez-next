@@ -9,8 +9,8 @@ import ProductCard from "./ProductCard";
 export default function Body() {
   return (
     <section id="productos" className="px-6 py-16">
-     <Wrapper> 
-     <h2 className="text-3xl text-blue-900 font-bold text-center mb-12">
+      <Wrapper> 
+      <h2 className="text-3xl text-blue-900 font-bold text-center mb-12">
         Nuestros Productos
       </h2>
 
@@ -25,9 +25,9 @@ export default function Body() {
             description={p.descripcion}
           />)
         })}
-       
+        
       </div>
-     </Wrapper>
+      </Wrapper>
     </section>
   );
 }
