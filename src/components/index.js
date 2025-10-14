@@ -3,4 +3,5 @@ export { default as Body } from "./Body";
 export { default as MovingImages } from "./MovingImages";
 export { default as ContactForm } from "./ContactForm";
 export { default as Footer } from "./Footer";
-export { default as Wrapper } from "./Wrapper"
+export { default as Wrapper } from "./Wrapper";
+export { default as Libro } from "./Libro";

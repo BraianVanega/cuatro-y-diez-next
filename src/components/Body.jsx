@@ -1,10 +1,8 @@
 import { Images } from "lucide-react";
 import Image from "next/image";
 import { Wrapper } from ".";
-import products from '@/mock/products.JSON'
+import products from "@/mock/products.JSON";
 import ProductCard from "./ProductCard";
-
-
 
 export default function Body() {
   return (
@@ -16,9 +14,9 @@ export default function Body() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {/* Primer producto*/}
-        {products.map((p, keyExample) => {
+        {products.map((p, key) => {
           return (<ProductCard 
-            key={keyExample}
+            key={key}
             img={p.imagen}
             price={p.precio}
             name={p.nombre}

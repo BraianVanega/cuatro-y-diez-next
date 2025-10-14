@@ -1,4 +1,4 @@
-import { Body, Header, MovingImages, Footer } from "@/components";
+import { Body, Header, MovingImages, Footer, Libro } from "@/components";
 import QuienesSomos from "@/components/QuienesSomos";
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
       <Header />
       <main className="pt-32">
         <MovingImages />
+        <Libro />
         <Body />
         <QuienesSomos />
       </main>
