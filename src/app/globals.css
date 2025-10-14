@@ -17,3 +17,20 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Estilos para el efecto parallax */
+.parallax-image {
+  will-change: transform;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Optimización para el scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mejora de rendimiento para animaciones */
+* {
+  box-sizing: border-box;
+}
