@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Wrapper } from ".";
+
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,7 +35,8 @@ function Header() {
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <Wrapper>
+      <div className="px-6 py-4 flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/">
             <Image
@@ -71,6 +74,7 @@ function Header() {
         </div>
       </div>
 
+      </Wrapper>
       {menuOpen && (
         <div className="md:hidden bg-white shadow-md px-6 pb-4">
           <a href="#productos" className="block py-2 border-b text-gray-800">

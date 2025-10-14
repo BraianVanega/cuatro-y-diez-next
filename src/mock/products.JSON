@@ -1,0 +1,51 @@
+[
+    {
+      "nombre": "Vino Tinto Malbec 750cc",
+      "descripcion": "Vino tinto Malbec argentino, con notas de frutos rojos y taninos suaves.",
+      "precio": 4200,
+      "imagen": "/images/foto1.jpg"
+    },
+    {
+      "nombre": "Whisky Escocés 750cc",
+      "descripcion": "Whisky escocés añejado 12 años, con un sabor ahumado y toques de vainilla.",
+      "precio": 15800,
+      "imagen": "/images/foto1.jpg"
+    },
+    {
+      "nombre": "Vodka Premium 750cc",
+      "descripcion": "Vodka destilado 5 veces para mayor pureza, ideal para cócteles.",
+      "precio": 6800,
+      "imagen": "/images/foto1.jpg"
+    },
+    {
+      "nombre": "Ron Añejo 750cc",
+      "descripcion": "Ron añejado en barricas de roble por 8 años, con notas de caramelo y especias.",
+      "precio": 7200,
+      "imagen": "/images/foto1.jpg"
+    },
+    {
+      "nombre": "Ginebra Artesanal 750cc",
+      "descripcion": "Ginebra elaborada con botánicos seleccionados, aroma cítrico y fresco.",
+      "precio": 8900,
+      "imagen": "/images/foto1.jpg"
+    },
+    {
+      "nombre": "Tequila Reposado 750cc",
+      "descripcion": "Tequila reposado 100% agave azul, con notas de madera y vainilla.",
+      "precio": 9300,
+      "imagen": "/images/foto1.jpg"
+    },
+    {
+      "nombre": "Vino Blanco Chardonnay 750cc",
+      "descripcion": "Vino blanco Chardonnay, fresco y frutal, ideal para maridar con pescados.",
+      "precio": 3900,
+      "imagen": "/images/foto1.jpg"
+    },
+    {
+      "nombre": "Vermouth Rojo 750cc",
+      "descripcion": "Vermouth artesanal con hierbas aromáticas, perfecto para aperitivos.",
+      "precio": 3100,
+      "imagen": "/images/foto1.jpg"
+    }
+  ]
+  
