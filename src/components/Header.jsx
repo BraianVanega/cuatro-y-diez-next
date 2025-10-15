@@ -55,9 +55,9 @@ function Header() {
             <a href="#quienes-somos" className="hover:text-white">
               Quiénes Somos
             </a>
-            <Link href="/contacto" className="hover:text-white">
+            <a href="#contacto" className="hover:text-white">
               Contacto
-            </Link>
+            </a>
           </nav>
 
           {/* <div className="hidden md:block">

@@ -5,3 +5,4 @@ export { default as ContactForm } from "./ContactForm";
 export { default as Footer } from "./Footer";
 export { default as Wrapper } from "./Wrapper";
 export { default as Libro } from "./Libro";
+export { default as QuienesSomos } from "./QuienesSomos";
