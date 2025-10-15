@@ -2643,6 +2643,11 @@ signal-exit@^4.0.1:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-4.1.0.tgz#952188c1cbd546070e2dd20d0f41c0ae0530cb04"
   integrity sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==
 
+simple-parallax-js@^6.3.3:
+  version "6.3.3"
+  resolved "https://registry.yarnpkg.com/simple-parallax-js/-/simple-parallax-js-6.3.3.tgz#90b0a78e3cc1fcc8dab68648950803233e3ba105"
+  integrity sha512-drb/E9La5MRAq86RLi/Y4ku7l4wybZTDbWNq1mQdx/DbLlgf3YbZytw7Fe3p+MgtQQjIc9V63d7UK1Nc+DMk6Q==
+
 source-map-js@^1.0.2, source-map-js@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.1.tgz#1ce5650fddd87abc099eda37dcff024c2667ae46"

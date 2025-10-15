@@ -4,7 +4,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Image from "next/image";
-const images = ["/images/Foto1.jpg", "/images/Foto2.jpg", "/images/Foto3.jpg", "/images/Foto4.jpg"];
+const images = [
+  "/images/foto1.jpg",
+  "/images/foto2.jpg",
+  "/images/foto3.jpg",
+  "/images/foto4.jpg",
+];
 
 export default function MovingImages() {
   return (

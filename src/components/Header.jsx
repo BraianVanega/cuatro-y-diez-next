@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Wrapper } from ".";
 
-
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
@@ -36,44 +35,43 @@ function Header() {
       }`}
     >
       <Wrapper>
-      <div className="px-6 py-4 flex items-center justify-between">
-        <div className="flex items-center">
-          <Link href="/">
-            <Image
-              src="/images/logo.png"
-              alt="Logo Cuatro y 10"
-              className="h-12 w-auto cursor-pointer"
-              width={100}
-              height={100}
-            />
-          </Link>
+        <div className="px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center">
+            <Link href="/">
+              <Image
+                src="/images/logo.png"
+                alt="Logo Cuatro y 10"
+                className="h-24 w-auto cursor-pointer"
+                width={100}
+                height={100}
+              />
+            </Link>
+          </div>
+
+          <nav className="hidden md:flex space-x-6 items-center">
+            <a href="#productos" className="hover:text-white">
+              Productos
+            </a>
+            <a href="#quienes-somos" className="hover:text-white">
+              Quiénes Somos
+            </a>
+            <Link href="/contacto" className="hover:text-white">
+              Contacto
+            </Link>
+          </nav>
+
+          {/* <div className="hidden md:block">
+            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+              Acceder
+            </button>
+          </div> */}
+
+          <div className="md:hidden">
+            <button onClick={() => setMenuOpen(!menuOpen)}>
+              {menuOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
         </div>
-
-        <nav className="hidden md:flex space-x-6 items-center">
-          <a href="#productos" className="hover:text-white">
-            Productos
-          </a>
-          <a href="#quienes-somos" className="hover:text-white">
-            Quiénes Somos
-          </a>
-          <Link href="/contacto" className="hover:text-white">
-            Contacto
-          </Link>
-        </nav>
-
-        <div className="hidden md:block">
-          <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
-            Acceder
-          </button>
-        </div>
-
-        <div className="md:hidden">
-          <button onClick={() => setMenuOpen(!menuOpen)}>
-            {menuOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
-        </div>
-      </div>
-
       </Wrapper>
       {menuOpen && (
         <div className="md:hidden bg-white shadow-md px-6 pb-4">
