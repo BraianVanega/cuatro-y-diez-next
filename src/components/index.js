@@ -6,4 +6,5 @@ export { default as Footer } from "./Footer";
 export { default as Wrapper } from "./Wrapper";
 export { default as Libro } from "./Libro";
 export { default as QuienesSomos } from "./QuienesSomos";
+export { default as AgeVerificationPopup } from "./AgeVerificationPopup";
 export { default as ProductCard } from "./ProductCard";
