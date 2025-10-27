@@ -30,7 +30,7 @@ function Header() {
 
   return (
     <header
-      className={`bg-blue-500 shadow-md fixed top-0 w-full z-50 transition-transform duration-300 ${
+      className={`bg-blue-500 shadow-md fixed top-0 w-full z-40 transition-transform duration-300 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
