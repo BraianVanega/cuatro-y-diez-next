@@ -34,6 +34,7 @@ export default function MovingImages() {
                 fill
                 alt={`Imagen ${i + 1}`}
                 className="w-full h-full object-cover"
+                unoptimized={true}
               />
             </div>
           </SwiperSlide>
