@@ -29,12 +29,10 @@ export default function MovingImages() {
         {images.map((src, i) => (
           <SwiperSlide key={i}>
             <div className="overflow-hidden aspect-[16/10] relative">
-              <Image
+              <img
                 src={src}
-                fill
                 alt={`Imagen ${i + 1}`}
-                className="w-full h-full object-cover"
-                unoptimized={true}
+                className="w-full h-full absolute top-0 left-0 object-cover"
               />
             </div>
           </SwiperSlide>
