@@ -20,15 +20,15 @@ export default function MovingImages() {
         slidesPerView={1.2}
         allowTouchMove={true}
         loop
-        // autoplay={{
-        //   delay: 3000,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         className="w-full h-full"
       >
         {images.map((src, i) => (
           <SwiperSlide key={i}>
-            <div className="overflow-hidden aspect-[16/10]">
+            <div className="overflow-hidden aspect-[16/10] relative">
               <Image
                 src={src}
                 fill
