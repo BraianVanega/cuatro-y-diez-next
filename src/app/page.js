@@ -15,12 +15,14 @@ export default function Home() {
       <div className="flex flex-col min-h-screen font-sans bg-blue-100">
         <AgeVerificationPopup />
         <Header />
-        <main className="pt-52">
+        <main className="pt-32 sm:pt-40 md:pt-52 flex-1">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <MovingImages />
           <Productos />
           <Libro />
           <QuienesSomos />
           <ContactForm />
+          </div>
         </main>
         <Footer />
       </div>

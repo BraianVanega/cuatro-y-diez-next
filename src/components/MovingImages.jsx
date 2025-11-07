@@ -17,22 +17,23 @@ export default function MovingImages() {
       <Swiper
         modules={[Autoplay]}
         spaceBetween={10}
-        slidesPerView={1.2}
+        slidesPerView={1.1}
+        centeredSlides={true}
         allowTouchMove={true}
         loop
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
         }}
-        className="w-full h-full"
+        className="w-full"
       >
         {images.map((src, i) => (
           <SwiperSlide key={i}>
-            <div className="overflow-hidden aspect-[16/10] relative">
+            <div className="relative w-full">
               <img
                 src={src}
                 alt={`Imagen ${i + 1}`}
-                className="w-full h-full absolute top-0 left-0 object-cover"
+                className="w-full h-[45vh] sm:h-[60vh] md:h-[70vh] object-cover object-center rounded-2xl"
               />
             </div>
           </SwiperSlide>

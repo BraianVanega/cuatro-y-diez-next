@@ -9,7 +9,6 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  // const [tiendaOpen, setTiendaOpen] = useState(false);
 
   useEffect(() => {
     const controlNavbar = () => {
@@ -35,63 +34,59 @@ function Header() {
       }`}
     >
       <Wrapper>
-        <div className="px-6 py-4 flex items-center justify-between">
+        <div className="px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex items-center justify-between">
           <div className="flex items-center">
             <Link href="/">
               <Image
                 src="/images/logo.png"
                 alt="Logo Cuatro y 10"
-                className="h-24 w-auto cursor-pointer"
+                className="h-16 w-auto sm:h-20 md:h-24 cursor-pointer"
                 width={100}
                 height={100}
               />
             </Link>
           </div>
 
-          <nav className="hidden md:flex space-x-6 items-center">
-            <a href="#productos" className="hover:text-white">
+          <nav className="hidden md:flex space-x-8 items-center text-white font-medium">
+            <a href="#productos" className="hover:text-gray-200 transition">
               Productos
             </a>
-            <a href="#quienes-somos" className="hover:text-white">
+            <a href="#quienes-somos" className="hover:text-gray-200 transition">
               Quiénes Somos
             </a>
-            <a href="#contacto" className="hover:text-white">
+            <a href="#contacto" className="hover:text-gray-200 transition">
               Contacto
             </a>
           </nav>
 
-          {/* <div className="hidden md:block">
-            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
-              Acceder
-            </button>
-          </div> */}
+
 
           <div className="md:hidden">
-            <button onClick={() => setMenuOpen(!menuOpen)}>
+            <button onClick={() => setMenuOpen(!menuOpen)}
+              className="text-white focus:outline-none">
               {menuOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
           </div>
         </div>
       </Wrapper>
+
+
       {menuOpen && (
-        <div className="md:hidden bg-white shadow-md px-6 pb-4">
-          <a href="#productos" className="block py-2 border-b text-gray-800">
+        <div className="md:hidden bg-blue-100 text-blue-900 shadow-md px-6 pb-4 transition-all duration-300">
+          <a href="#productos" className="block py-2 border-b border-blue-300 hover:text-blue-600">
             Productos
           </a>
           <a
             href="#quienes-somos"
-            className="block py-2 border-b text-gray-800"
+            className="block py-2 border-b border-blue-300 hover:text-blue-600"
           >
             Quiénes Somos
           </a>
-          <Link href="/contacto" className="block py-2 border-b text-gray-800">
+          <Link href="#contacto" className="block py-2 border-b border-blue-300 hover:text-blue-300">
             Contacto
           </Link>
 
           <div className="mt-4">
-            <button className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
-              Acceder
-            </button>
           </div>
         </div>
       )}
