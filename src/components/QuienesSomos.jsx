@@ -11,10 +11,9 @@ export default function QuienesSomos() {
           <Image
             src="/images/nosotros.jpeg"
             alt="Quiénes somos Cuatro y 10"
-            className="rounded-2xl shadow-lg"
+            className="rounded-2xl shadow-lg object-cover"
             width={600}
             height={600}
-            objectFit="cover"
           />
         </div>
 
@@ -40,10 +39,6 @@ export default function QuienesSomos() {
           </div>
         </div>
       </div>
-      {/* <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
-        <div className="w-96 h-96 bg-blue-200 rounded-full opacity-30 absolute -top-32 -left-32"></div>
-        <div className="w-72 h-72 bg-yellow-200 rounded-full opacity-20 absolute -bottom-32 -right-24"></div>
-      </div> */}
     </section>
   );
 }
