@@ -2,7 +2,7 @@ import Image from "next/image";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function ProductCard({ img, name, description, price }) {
-  const phoneNumber = "5402234210160";
+  const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
   const message = `Hola, quiero consultar por este producto ${name}`;
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message

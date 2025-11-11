@@ -17,10 +17,10 @@ export default function MovingImages() {
       <Swiper
         modules={[Autoplay]}
         spaceBetween={10}
-        slidesPerView={1.1}
+        slidesPerView={1.5}
         centeredSlides={true}
         allowTouchMove={true}
-        loop={false}
+        loop={true}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,

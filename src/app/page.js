@@ -16,12 +16,12 @@ export default function Home() {
         <AgeVerificationPopup />
         <Header />
         <main className="pt-32 sm:pt-40 md:pt-52 flex-1">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <MovingImages />
-          <Productos />
-          <Libro />
-          <QuienesSomos />
-          <ContactForm />
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <Productos />
+            <Libro />
+            <QuienesSomos />
+            <ContactForm />
           </div>
         </main>
         <Footer />

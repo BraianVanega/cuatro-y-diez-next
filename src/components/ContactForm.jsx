@@ -11,6 +11,8 @@ export default function ContactForm() {
   });
 
   const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState(false);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -18,26 +20,53 @@ export default function ContactForm() {
       ...formData,
       [name]: type === "checkbox" ? checked : value,
     });
+    // Limpiar mensajes de error al escribir
+    if (error) setError("");
+    if (success) setSuccess(false);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    console.log("Datos del formulario", formData);
-    alert("Formulario enviado (modo prueba) ✅");
-
     setSending(true);
-    setTimeout(() => {
-      setSending(false);
+    setError("");
+    setSuccess(false);
 
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Error al enviar el formulario");
+      }
+
+      // Éxito
+      setSuccess(true);
       setFormData({
         name: "",
         email: "",
         phone: "",
         message: "",
-        terms: false,
       });
-    }, 1000);
+
+      // Ocultar mensaje de éxito después de 5 segundos
+      setTimeout(() => {
+        setSuccess(false);
+      }, 5000);
+    } catch (err) {
+      setError(
+        err.message ||
+          "Error al enviar el formulario. Por favor, intenta nuevamente."
+      );
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -49,6 +78,18 @@ export default function ContactForm() {
         <h2 className="text-2xl font-bold text-center text-gray-800">
           Formulario de Contacto
         </h2>
+
+        {error && (
+          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg">
+            {error}
+          </div>
+        )}
+
+        {success && (
+          <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg">
+            ¡Mensaje enviado correctamente! Te contactaremos pronto.
+          </div>
+        )}
 
         <input
           type="text"
