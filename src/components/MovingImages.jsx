@@ -9,6 +9,8 @@ const images = [
   "/images/Foto2.jpg",
   "/images/Foto3.jpg",
   "/images/Foto4.jpg",
+  "/images/foto5.jpg",
+  "/images/foto6.jpg",
 ];
 
 export default function MovingImages() {
@@ -29,13 +31,17 @@ export default function MovingImages() {
       >
         {images.map((src, i) => (
           <SwiperSlide key={i}>
-            <div className="relative w-full min-h-[45vh] sm:min-h-[60vh] md:min-h-[70vh] rounded-2xl overflow-hidden">
+            <div className="relative w-full min-h-[45vh] sm:min-h-[70vh] md:min-h-[80vh] rounded-2xl overflow-hidden">
               <Image
                 src={src}
                 alt={`Imagen ${i + 1}`}
                 fill
                 priority={i === 0}
-                className="object-cover object-center rounded-2xl"
+                className= "object-cover rounded-2xl"
+                style={{
+                  objectPosition:
+                    i === 3 ? "center 60%" : i === 6 ? "center 75%" : "center center",
+                }}
               />
             </div>
           </SwiperSlide>

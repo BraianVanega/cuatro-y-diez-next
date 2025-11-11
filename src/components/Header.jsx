@@ -47,14 +47,30 @@ function Header() {
             </Link>
           </div>
 
-          <nav className="hidden md:flex space-x-8 items-center text-white font-medium">
-            <a href="#productos" className="hover:text-gray-200 transition">
+
+          <div className="hidden md:flex flex-col items-center mx-4 text-center select-none">
+            <p className="text-xs tracking-[0.4em] text-white uppercase">
+              LONDON DRY GIN
+            </p>
+
+            <h1 className="text-6xl font-noto text-white tracking-[0.25em] uppercase leading-tight">
+              Cuatro y 10
+            </h1>
+
+            <p className="text-sm tracking-[0.35em] text-white uppercase mt-1">
+              Artesanal
+            </p>
+          </div>
+
+
+          <nav className="hidden md:flex space-x-8 items-center text-white font-roboto">
+            <a href="#productos" className="hover:text-gray-300 transition">
               Productos
             </a>
-            <a href="#quienes-somos" className="hover:text-gray-200 transition">
+            <a href="#quienes-somos" className="hover:text-gray-300 transition">
               Quiénes Somos
             </a>
-            <a href="#contacto" className="hover:text-gray-200 transition">
+            <a href="#contacto" className="hover:text-gray-300 transition">
               Contacto
             </a>
           </nav>

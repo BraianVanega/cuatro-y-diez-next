@@ -17,3 +17,14 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wdth,wght@75,400;75,700&family=Roboto:wght@400;500;700&display=swap');
+
+.font-noto {
+  font-family: "Noto Serif Display", serif;
+  font-stretch: 75%;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}

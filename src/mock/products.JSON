@@ -21,12 +21,12 @@
     "nombre": "Mejor por caja",
     "descripcion": "Caja x6 Botellas de 750cc",
     "precio": 80000,
-    "imagen": "/images/servido.jpeg"
+    "imagen": "/images/brindando.jpeg"
   },
   {
     "nombre": "En combo",
     "descripcion": "Botella de gin + copa ",
     "precio": 23000,
-    "imagen": "/images/brindando.jpeg"
+    "imagen": "/images/servido.jpeg"
   }
 ]
