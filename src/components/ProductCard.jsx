@@ -15,7 +15,7 @@ export default function ProductCard({ img, name, description, price }) {
     });
 
   return (
-    <div className="bg-white shadow-md rounded-2xl overflow-hidden flex flex-col justify-between h-full cursor-pointer group transition-all duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.45)]">
+    <div className="bg-white w-full shadow-md rounded-2xl overflow-hidden flex flex-col justify-between h-full cursor-pointer group transition-all duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.45)]">
       {/* Imagen */}
       <figure className="relative w-full h-[240px] sm:h-[280px] md:h-[300px] overflow-hidden">
         <Image

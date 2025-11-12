@@ -4,7 +4,7 @@ import ProductCard from "./ProductCard";
 
 export default function Productos() {
   return (
-    <section id="productos" className="py-16 bg-blue-50">
+    <section id="productos" className="py-16 bg-blue-50 mt-8">
       <Wrapper>
         <h2 className="text-3xl sm:text-4xl text-blue-900 font-bold text-center mb-12">
           Nuestros Productos
