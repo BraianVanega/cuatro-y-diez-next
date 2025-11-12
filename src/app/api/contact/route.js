@@ -5,7 +5,6 @@ export async function POST(request) {
     const body = await request.json();
     const { name, email, phone, message } = body;
 
-    // Validar que todos los campos estén presentes
     if (!name || !email || !phone || !message) {
       return Response.json(
         { error: "Todos los campos son requeridos" },
@@ -13,18 +12,16 @@ export async function POST(request) {
       );
     }
 
-    // Configurar el transporter de nodemailer
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST || "smtp.gmail.com",
       port: parseInt(process.env.SMTP_PORT || "587"),
-      secure: process.env.SMTP_SECURE === "true", // true para 465, false para otros puertos
+      secure: process.env.SMTP_SECURE === "true",
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
       },
     });
 
-    // Verificar que las credenciales estén configuradas
     if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
       return Response.json(
         { error: "Configuración de email no encontrada" },
@@ -32,10 +29,9 @@ export async function POST(request) {
       );
     }
 
-    // Configurar el email
     const mailOptions = {
       from: process.env.SMTP_USER,
-      to: process.env.CONTACT_EMAIL, // Email donde recibirás los mensajes
+      to: process.env.CONTACT_EMAIL,
       subject: `Nuevo mensaje de contacto de ${name}`,
       html: `
         <h2>Nuevo mensaje de contacto</h2>
@@ -45,10 +41,9 @@ export async function POST(request) {
         <p><strong>Mensaje:</strong></p>
         <p>${message.replace(/\n/g, "<br>")}</p>
       `,
-      replyTo: email, // Para que puedas responder directamente al usuario
+      replyTo: email,
     };
 
-    // Enviar el email
     await transporter.sendMail(mailOptions);
 
     return Response.json(

@@ -20,7 +20,6 @@ export default function ContactForm() {
       ...formData,
       [name]: type === "checkbox" ? checked : value,
     });
-    // Limpiar mensajes de error al escribir
     if (error) setError("");
     if (success) setSuccess(false);
   };
@@ -46,7 +45,6 @@ export default function ContactForm() {
         throw new Error(data.error || "Error al enviar el formulario");
       }
 
-      // Éxito
       setSuccess(true);
       setFormData({
         name: "",
@@ -55,7 +53,6 @@ export default function ContactForm() {
         message: "",
       });
 
-      // Ocultar mensaje de éxito después de 5 segundos
       setTimeout(() => {
         setSuccess(false);
       }, 5000);
