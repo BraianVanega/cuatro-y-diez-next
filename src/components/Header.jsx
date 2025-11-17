@@ -47,6 +47,20 @@ function Header() {
             </Link>
           </div>
 
+          <div className="flex flex-col items-center text-center md:hidden mx-2 select-none">
+            <p className="text-[9px]tracking-[0.35em] text-white uppercase">
+              LONDON DRY GIN
+            </p>
+
+            <h1 className="text-lg font-noto text-white tracking-[0.25em] uppercase leading-tight  ">
+              Cuatro y 10
+            </h1>
+
+            <p className="text-[9px] tracking-[0.3em] text-white uppercase ">
+              Artesanal
+            </p>
+          </div>
+
           <div className="hidden md:flex flex-col items-center mx-4 text-center select-none gap-1">
             <p className="text-xs tracking-[0.4em] text-white uppercase">
               LONDON DRY GIN
@@ -60,7 +74,7 @@ function Header() {
               Artesanal
             </p>
           </div>
-
+          
           <nav className="hidden md:flex space-x-8 items-center text-white font-roboto">
             <a
               href="#productos"
@@ -100,29 +114,36 @@ function Header() {
       </Wrapper>
 
       {menuOpen && (
-        <div className="md:hidden bg-blue-100 text-blue-900 shadow-md px-6 pb-4 transition-all duration-300">
-          <a
-            href="#productos"
-            className="block py-2 border-b border-blue-300 hover:text-blue-600"
-          >
-            Productos
-          </a>
-          <a
-            href="#quienes-somos"
-            className="block py-2 border-b border-blue-300 hover:text-blue-600"
-          >
-            Quiénes Somos
-          </a>
-          <Link
-            href="#contacto"
-            className="block py-2 border-b border-blue-300 hover:text-blue-300"
-          >
-            Contacto
-          </Link>
+  <div className="md:hidden bg-blue-500 text-white shadow-md px-6 pb-4 pt-3 animate-mobile-open-soft">
 
-          <div className="mt-4"></div>
-        </div>
-      )}
+    {/* Links */}
+    <a
+      href="#productos"
+      onClick={() => setMenuOpen(false)}
+      className="block py-3 border-b border-blue-300/30 hover:text-gray-200 text-sm tracking-wide uppercase"
+    >
+      Productos
+    </a>
+
+    <a
+      href="#quienes-somos"
+      onClick={() => setMenuOpen(false)}
+      className="block py-3 border-b border-blue-300/30 hover:text-gray-200 text-sm tracking-wide uppercase"
+    >
+      Quiénes Somos
+    </a>
+
+    <a
+      href="#contacto"
+      onClick={() => setMenuOpen(false)}
+      className="block py-3 hover:text-gray-200 text-sm tracking-wide uppercase"
+    >
+      Contacto
+    </a>
+  </div>
+)}
+
+
     </header>
   );
 }
