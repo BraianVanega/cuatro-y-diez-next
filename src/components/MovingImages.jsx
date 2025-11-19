@@ -5,12 +5,12 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Image from "next/image";
 const images = [
-  "/images/Foto1.jpg",
+  "/images/foto6.jpg",
   "/images/Foto2.jpg",
+  "/images/Foto1.jpg",
   "/images/Foto3.jpg",
   "/images/Foto4.jpg",
   "/images/foto5.jpg",
-  "/images/foto6.jpg",
 ];
 
 export default function MovingImages() {
