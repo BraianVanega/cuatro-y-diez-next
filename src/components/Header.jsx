@@ -47,7 +47,7 @@ function Header() {
             </Link>
           </div>
 
-          <div className="flex flex-col items-center text-center md:hidden mx-2 select-none flex-1">
+          <div className="md:hidden absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center select-none pointer-events-none">
             <p className="text-[9px]tracking-[0.35em] text-white uppercase">
               LONDON DRY GIN
             </p>
