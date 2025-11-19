@@ -26,11 +26,11 @@ export const metadata = {
     siteName:"Cuatro y 10",
     images:[
       {
-        url:"https://cuatro-y-10-next.vercel.app/images/logo.png",
-        width:600,
-        height:600,
-        alt:"Logo Cuatro y 10",
-      },
+        url: "https://cuatro-y-10-next.vercel.app/images/cuatroy10.png",
+        width: 600,
+        height: 600,
+        alt: "Logo Cuatro y 10",
+      }
     ],
     locale: "es-AR",
     type: "website",
