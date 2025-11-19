@@ -38,7 +38,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="/contacto"
+                href="#contacto"
                 className="hover:text-gray-300 transition-colors"
               >
                 Contacto
