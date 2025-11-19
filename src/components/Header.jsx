@@ -34,8 +34,8 @@ function Header() {
       }`}
     >
       <Wrapper>
-        <div className="px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex items-center justify-between">
-          <div className="flex items-center flex-1">
+        <div className="px-4 sm:px-6 lg:px-8 py-3 sm:py-4 grid grid-cols-3 items-center">
+          <div className="flex items-center flex-1 md:flex-none mr-2">
             <Link href="/">
               <Image
                 src="/images/logo.png"
@@ -47,7 +47,7 @@ function Header() {
             </Link>
           </div>
 
-          <div className="md:hidden absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center select-none pointer-events-none">
+          <div className="lg:hidden absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center select-none pointer-events-none">
             <p className="text-[9px]tracking-[0.35em] text-white uppercase">
               LONDON DRY GIN
             </p>
@@ -61,7 +61,7 @@ function Header() {
             </p>
           </div>
 
-          <div className="hidden md:flex flex-col items-center mx-4 text-center select-none gap-1 flex-1">
+          <div className="hidden lg:flex flex-col items-center text-center select-none gap-1 mx-auto">
             <p className="text-xs tracking-[0.4em] text-white uppercase">
               LONDON DRY GIN
             </p>
@@ -75,7 +75,7 @@ function Header() {
             </p>
           </div>
           
-          <nav className="hidden md:flex space-x-8 items-center text-white font-roboto flex-1 justify-end">
+          <nav className="hidden lg:flex space-x-8 items-center text-white font-roboto flex-1 justify-end">
             <a
               href="#productos"
               className="hover:text-gray-300 transition-all duration-300 relative group"
@@ -102,7 +102,7 @@ function Header() {
             </a>
           </nav>
 
-          <div className="md:hidden">
+          <div className="lg:hidden flex justify-end col-start-3 z-50">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="text-white focus:outline-none"
@@ -114,7 +114,7 @@ function Header() {
       </Wrapper>
 
       {menuOpen && (
-  <div className="md:hidden bg-blue-500 text-white shadow-md px-6 pb-4 pt-3 animate-mobile-open-soft">
+  <div className="lg:hidden bg-blue-500 text-white shadow-md px-6 pb-4 pt-3 animate-mobile-open-soft">
 
     {/* Links */}
     <a
