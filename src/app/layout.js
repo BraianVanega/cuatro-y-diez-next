@@ -13,7 +13,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata = {
   title: "Cuatro y Diez",
-  description: "Cuatro y Diez",
+  description: "Cuatro y Diez"
 };
 
 export default function RootLayout({ children }) {
