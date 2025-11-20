@@ -1,10 +1,18 @@
+"use client";
 import { Wrapper } from ".";
 import products from "@/mock/products.JSON";
 import ProductCard from "./ProductCard";
+import { motion } from "framer-motion";
 
 export default function Productos() {
   return (
-    <section id="productos" className="py-16 bg-blue-50 mt-8">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 2 }}
+      id="productos"
+      className="py-16 bg-blue-50 mt-8"
+    >
       <Wrapper>
         <h2 className="text-3xl sm:text-4xl text-blue-900 font-bold text-center mb-12">
           Nuestros Productos
@@ -24,6 +32,6 @@ export default function Productos() {
           })}
         </div>
       </Wrapper>
-    </section>
+    </motion.section>
   );
 }

@@ -1,8 +1,16 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 
 export default function QuienesSomos() {
+  const ref = useRef(null);
   return (
-    <section
+    <motion.section
+      ref={ref}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 1.5 }}
       id="quienes-somos"
       className="relative bg-gradient-to-b from-blue-50 via-white to-blue-100 py-20 px-4 md:px-20"
     >
@@ -39,6 +47,6 @@ export default function QuienesSomos() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

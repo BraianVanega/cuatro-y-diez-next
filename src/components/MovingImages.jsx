@@ -17,9 +17,9 @@ import { motion } from "framer-motion";
 export default function MovingImages() {
   return (
     <motion.div
-      initial={{ opacity: 0, x: -1200 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.8 }}
       className="relative w-full overflow-hidden"
     >
       <Swiper

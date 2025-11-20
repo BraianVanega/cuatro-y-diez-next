@@ -29,22 +29,24 @@ function Header() {
   }, [lastScrollY]);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-40">
+    <header
+      className={`fixed top-0 left-0 w-full z-40 ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      } transition-transform duration-300`}
+    >
       <div className="relative w-full h-full">
         <motion.div
-          className={`bg-blue-500 w-full h-full absolute top-0 left-0 shadow-md transition-transform duration-300 ${
-            isVisible ? "translate-y-0" : "-translate-y-full"
-          }`}
+          className={`bg-blue-500 w-full h-full absolute top-0 left-0 shadow-md transition-transform duration-300 `}
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.1 }}
+          transition={{ duration: 0.3 }}
         ></motion.div>
         <Wrapper className="relative z-10">
           <div className="px-4 sm:px-6 lg:px-8 py-3 sm:py-4 grid grid-cols-3 items-center">
             <motion.div
               initial={{ opacity: 0, y: -100 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.4, delay: 0.3 }}
               className="flex items-center flex-1 md:flex-none mr-2"
             >
               <Link href="/">
@@ -75,7 +77,7 @@ function Header() {
             <motion.div
               initial={{ opacity: 0, y: -100 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.4, delay: 0.5 }}
               className="hidden lg:flex flex-col items-center text-center select-none gap-1 mx-auto"
             >
               <p className="text-xs tracking-[0.4em] text-white uppercase">
@@ -96,8 +98,8 @@ function Header() {
                 initial={{ opacity: 0, y: -100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
-                  ease: "linear",
                   duration: 0.3,
+                  delay: 0.6,
                 }}
                 href="#productos"
                 className="hover:text-gray-300 transition-all duration-300 relative group"
@@ -112,7 +114,7 @@ function Header() {
                 transition={{
                   ease: "linear",
                   duration: 0.3,
-                  delay: 0.2,
+                  delay: 0.7,
                 }}
                 href="#quienes-somos"
                 className="hover:text-gray-300 transition-all duration-300 relative group"
@@ -127,7 +129,7 @@ function Header() {
                 transition={{
                   ease: "linear",
                   duration: 0.3,
-                  delay: 0.3,
+                  delay: 0.8,
                 }}
                 href="#contacto"
                 className="hover:text-gray-300 transition-all duration-300 relative group"
