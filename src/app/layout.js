@@ -36,6 +36,10 @@ export const metadata = {
     type: "website",
 },
 
+other: {
+  "google-site-verification": "ZBg0MsV1gNceF6izvCSy47QHFogwfN5i2pJA_hirzw8",
+},
+
 };
 
 export default function RootLayout({ children }) {
