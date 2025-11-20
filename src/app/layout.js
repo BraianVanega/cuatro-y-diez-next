@@ -15,6 +15,19 @@ export const metadata = {
   title: "Cuatro y 10",
   description: "#SomosCuatroy10",
 
+  keywords: [
+    "gin",
+    "gin artesanal",
+    "ginebra",
+    "cuatro y 10",
+    "gin cuatro y 10",
+    "mejores gin",
+    "gin de mar del plata"
+
+  ],
+
+  metadataBase: new URL("https://cuatro-y-10-next.vercel.app"),
+
   icons: {
     icon: "/images/logo.png",
   },
@@ -22,17 +35,17 @@ export const metadata = {
   openGraph:{
     title: "Cuatro y 10",
     description: "#SomosCuatroy10",
-    url: "https://cuatro-y-10-next.vercel.app/",
+    url: "https://cuatro-y-10-next.vercel.app",
     siteName:"Cuatro y 10",
     images:[
       {
-        url: "https://cuatro-y-10-next.vercel.app/images/cuatroy10.png",
+        url: "/images/cuatroy10.png",
         width: 600,
         height: 600,
         alt: "Logo Cuatro y 10",
       }
     ],
-    locale: "es-AR",
+    locale: "es_AR",
     type: "website",
 },
 
@@ -44,7 +57,7 @@ other: {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
       >
