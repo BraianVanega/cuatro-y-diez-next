@@ -40,12 +40,12 @@ function Header() {
           transition={{ duration: 0.1 }}
         ></motion.div>
         <Wrapper className="relative z-10">
-          <div className="px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex items-center justify-between">
+          <div className="px-4 sm:px-6 lg:px-8 py-3 sm:py-4 grid grid-cols-3 items-center">
             <motion.div
               initial={{ opacity: 0, y: -100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
-              className="flex items-center"
+              className="flex items-center flex-1 md:flex-none mr-2"
             >
               <Link href="/">
                 <Image
@@ -58,7 +58,7 @@ function Header() {
               </Link>
             </motion.div>
 
-            <div className="flex flex-col items-center text-center md:hidden mx-2 select-none">
+            <div className="lg:hidden absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center select-none pointer-events-none">
               <p className="text-[9px]tracking-[0.35em] text-white uppercase">
                 LONDON DRY GIN
               </p>
@@ -76,7 +76,7 @@ function Header() {
               initial={{ opacity: 0, y: -100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
-              className="hidden md:flex flex-col items-center mx-4 text-center select-none gap-1"
+              className="hidden lg:flex flex-col items-center text-center select-none gap-1 mx-auto"
             >
               <p className="text-xs tracking-[0.4em] text-white uppercase">
                 LONDON DRY GIN
@@ -91,7 +91,7 @@ function Header() {
               </p>
             </motion.div>
 
-            <nav className="hidden md:flex space-x-8 items-center text-white font-roboto">
+            <nav className="hidden lg:flex space-x-8 items-center text-white font-roboto flex-1 justify-end">
               <motion.a
                 initial={{ opacity: 0, y: -100 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -138,7 +138,7 @@ function Header() {
               </motion.a>
             </nav>
 
-            <div className="md:hidden">
+            <div className="lg:hidden flex justify-end col-start-3 z-50">
               <button
                 onClick={() => setMenuOpen(!menuOpen)}
                 className="text-white focus:outline-none"
@@ -150,7 +150,7 @@ function Header() {
         </Wrapper>
 
         {menuOpen && (
-          <div className="md:hidden bg-blue-500 text-white shadow-md px-6 pb-4 pt-3 animate-mobile-open-soft">
+          <div className="lg:hidden bg-blue-500 text-white shadow-md px-6 pb-4 pt-3 animate-mobile-open-soft">
             {/* Links */}
             <a
               href="#productos"

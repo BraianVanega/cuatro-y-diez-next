@@ -12,8 +12,30 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Cuatro y Diez",
-  description: "Cuatro y Diez"
+  title: "Cuatro y 10",
+  description: "#SomosCuatroy10",
+
+  icons: {
+    icon: "/images/logo.png",
+  },
+
+  openGraph:{
+    title: "Cuatro y 10",
+    description: "#SomosCuatroy10",
+    url: "https://cuatro-y-10-next.vercel.app/",
+    siteName:"Cuatro y 10",
+    images:[
+      {
+        url: "https://cuatro-y-10-next.vercel.app/images/cuatroy10.png",
+        width: 600,
+        height: 600,
+        alt: "Logo Cuatro y 10",
+      }
+    ],
+    locale: "es-AR",
+    type: "website",
+},
+
 };
 
 export default function RootLayout({ children }) {

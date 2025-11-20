@@ -7,7 +7,7 @@ import SimpleParallax from "simple-parallax-js";
 export default function Libro() { 
   return ( 
   <section id="libro" className="relative py-32"> 
-  <Wrapper className="flex flex-row items-center justify-around"> 
+  <Wrapper className="flex flex-col md:flex-row items-center justify-around gap-10"> 
     <SimpleParallax delay={0} orientation={"up"} scale={1} overflow maxTransition={60} > 
 
     <Image src="/images/libro-1.png" alt="Libro" width={1000} height={1000} className="w-full" /> 
