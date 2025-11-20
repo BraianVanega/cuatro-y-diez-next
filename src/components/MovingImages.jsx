@@ -12,10 +12,16 @@ const images = [
   "/images/Foto4.jpg",
   "/images/foto5.jpg",
 ];
+import { motion } from "framer-motion";
 
 export default function MovingImages() {
   return (
-    <div className="relative w-full overflow-hidden">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.8 }}
+      className="relative w-full overflow-hidden"
+    >
       <Swiper
         modules={[Autoplay]}
         spaceBetween={10}
@@ -37,16 +43,20 @@ export default function MovingImages() {
                 alt={`Imagen ${i + 1}`}
                 fill
                 priority={i === 0}
-                className= "object-cover rounded-2xl"
+                className="object-cover rounded-2xl"
                 style={{
                   objectPosition:
-                    i === 3 ? "center 60%" : i === 6 ? "center 75%" : "center center",
+                    i === 3
+                      ? "center 60%"
+                      : i === 6
+                      ? "center 75%"
+                      : "center center",
                 }}
               />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </motion.div>
   );
 }
