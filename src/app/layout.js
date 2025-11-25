@@ -12,31 +12,34 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Cuatro y 10",
-  description: "#SomosCuatroy10",
+  title: "Gin Cuatro y 10 | London Dry Gin Artesanal",
+  description: "Gin Cuatro y 10 — London Dry Gin artesanal elaborado en pequeños lotes en Mar del Plata. Sabor equilibrado, botánicos seleccionados y producción local.",
 
+  
   keywords: [
-    "gin",
-    "gin artesanal",
-    "ginebra",
-    "cuatro y 10",
     "gin cuatro y 10",
-    "mejores gin",
-    "gin de mar del plata"
-
+    "cuatro y 10 gin",
+    "gin artesanal",
+    "gin mar del plata",
+    "london dry gin",
+    "ginebra artesanal",
+    "gin argentino",
+    "cuatro y diez gin"
   ],
 
   metadataBase: new URL("https://cuatro-y-10-next.vercel.app"),
 
   icons: {
-    icon: "/images/logo.png",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
 
   openGraph:{
-    title: "Cuatro y 10",
-    description: "#SomosCuatroy10",
+    title: "Gin Cuatro y 10 | London Dry Gin Artesanal",
+    description: "Cuatro y 10 — Gin artesanal producido en Mar del Plata. Un London Dry Gin con identidad propia.",
     url: "https://cuatro-y-10-next.vercel.app",
-    siteName:"Cuatro y 10",
+    siteName:"Gin Cuatro y 10",
     images:[
       {
         url: "/images/cuatroy10.png",
@@ -49,8 +52,8 @@ export const metadata = {
     type: "website",
 },
 
-other: {
-  "google-site-verification": "ZBg0MsV1gNceF6izvCSy47QHFogwfN5i2pJA_hirzw8",
+verification: {
+  google: "ZBg0MsV1gNceF6izvCSy47QHFogwfN5i2pJA_hirzw8",
 },
 
 };
