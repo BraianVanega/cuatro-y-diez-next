@@ -5,12 +5,18 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function AgeVerificationPopup() {
   const [isOpen, setIsOpen] = useState(false);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    const isVerified = localStorage.getItem("ageVerified");
-    if (!isVerified) {
-      setIsOpen(true);
+    try {
+      const isVerified = localStorage.getItem("ageVerified");
+      if (!isVerified) {
+        setIsOpen(true);
+      }
+    } catch (e) {
+      console.error("localStorage error:", e);
     }
+    setLoaded(true); // 
   }, []);
 
   const handleConfirm = () => {
@@ -21,6 +27,8 @@ export default function AgeVerificationPopup() {
   const handleDeny = () => {
     window.location.href = "https://google.com";
   };
+
+  if (!loaded) return null;
 
   if (!isOpen) return null;
 

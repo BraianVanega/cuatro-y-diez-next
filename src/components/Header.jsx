@@ -40,7 +40,9 @@ function Header() {
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-        ></motion.div>
+        >
+          
+        </motion.div>
         <Wrapper className="relative z-10">
           <div className="px-4 sm:px-6 lg:px-8 py-3 sm:py-4 grid grid-cols-3 items-center">
             <motion.div
