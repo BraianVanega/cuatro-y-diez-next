@@ -44,6 +44,7 @@ export default function ProductCard({ img, name, description, price }) {
       {/* Botón WhatsApp */}
       <div className="p-5 pt-0">
         <a
+        style={{background: "linear-gradient(90deg, #22C55E, #059669)",}}
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
