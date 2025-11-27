@@ -41,23 +41,30 @@ export default function AgeVerificationPopup() {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="bg-white rounded-2xl p-8 shadow-xl text-center max-w-sm mx-auto">
-        <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+      <div className="bg-white rounded-2xl p-8 shadow-xl text-center max-w-sm mx-auto"
+      style={{
+        backgroundColor: "#FFFFFF",}}>
+        <h2 className="text-2xl font-semibold mb-4 text-gray-800"
+        style={{ color: "#1F2937" }}>
           ¿Sos mayor de 18 años?
         </h2>
-        <p className="mb-6 text-gray-600">
+        <p className="mb-6 text-gray-600"
+        style={{ color: "#4B5563" }}>
           Debes tener al menos 18 años para ingresar a este sitio.
         </p>
         <div className="flex justify-center gap-4">
           <button
             onClick={handleConfirm}
             className="bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700"
-          >
+            style={{
+              backgroundColor: "#16A34A",}}>
             Si
           </button>
           <button
             onClick={handleDeny}
             className="bg-red-500 text-white px-5 py-2 rounded-lg hover:bg-red-600"
+            style={{
+              backgroundColor: "#EF4444"}}
           >
             No
           </button>
