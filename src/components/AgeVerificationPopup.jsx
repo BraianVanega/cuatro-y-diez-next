@@ -34,29 +34,30 @@ export default function AgeVerificationPopup() {
 
   return (
     <motion.div
+      style={{ backgroundColor: "rgba(0,0,0,0.7)" }}
       className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="bg-[#ffffff] bg-white rounded-2xl p-8 shadow-xl text-center max-w-sm mx-auto">
-        <h2 className="text-2xl font-semibold mb-4 text-[#1F2937] text-gray-800">
+      <div className="bg-white rounded-2xl p-8 shadow-xl text-center max-w-sm mx-auto">
+        <h2 className="text-2xl font-semibold mb-4 text-gray-800">
           ¿Sos mayor de 18 años?
         </h2>
-        <p className="mb-6 text-[#4B5563] text-gray-600">
+        <p className="mb-6 text-gray-600">
           Debes tener al menos 18 años para ingresar a este sitio.
         </p>
         <div className="flex justify-center gap-4">
           <button
             onClick={handleConfirm}
-            className="bg-[#22C55E] bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-[#16A34A] hover:bg-green-700"
+            className="bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700"
           >
             Si
           </button>
           <button
             onClick={handleDeny}
-            className="bg-[#EF4444] bg-red-500 text-white px-5 py-2 rounded-lg hover:bg-[#DC2626] hover:bg-red-600"
+            className="bg-red-500 text-white px-5 py-2 rounded-lg hover:bg-red-600"
           >
             No
           </button>
