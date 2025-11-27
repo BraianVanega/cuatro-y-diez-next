@@ -12,7 +12,7 @@ import {
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col min-h-screen font-sans bg-blue-100">
+      <div className="flex flex-col min-h-screen font-sans bg-[#DBEAFE] bg-blue-100">
         <AgeVerificationPopup />
         <Header />
         <main className="pt-32 sm:pt-40 md:pt-52 flex-1">

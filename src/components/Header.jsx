@@ -36,7 +36,7 @@ function Header() {
     >
       <div className="relative w-full h-full">
         <motion.div
-          className={`bg-blue-500 w-full h-full absolute top-0 left-0 shadow-md transition-transform duration-300 `}
+          className={`bg-[#3B82F6] bg-blue-500 w-full h-full absolute top-0 left-0 shadow-md transition-transform duration-300 `}
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}

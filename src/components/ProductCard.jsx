@@ -47,7 +47,7 @@ export default function ProductCard({ img, name, description, price }) {
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold px-5 py-2.5 rounded-full shadow-md hover:from-green-600 hover:to-emerald-700 active:scale-95 transition-transform duration-200"
+          className="flex items-center justify-center gap-2 bg-gradient-to-r from-[#22C55E] from-green-500 to-[#16A34A] to-emerald-600 text-white font-semibold px-5 py-2.5 rounded-full shadow-md  hover:from-[#16A34A] hover:from-green-600 hover:to-[#15803D] hover:to-emerald-700 active:scale-95 transition-transform duration-200"
         >
           <FaWhatsapp size={20} />
           <span className="text-sm sm:text-base">Pedir por WhatsApp</span>
