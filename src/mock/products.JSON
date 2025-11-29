@@ -2,7 +2,7 @@
   {
     "nombre": "Botella x 750cc",
     "descripcion": "Botella de gin artesanal",
-    "precio": 15000,
+    "precio": 16000,
     "imagen": "/images/fondo.jpeg"
   },
   {
@@ -14,13 +14,13 @@
   {
     "nombre": "Copa",
     "descripcion": "Copa personalizada Cuatro y 10",
-    "precio": 8000,
+    "precio": 10000,
     "imagen": "/images/copa2.jpg"
   },
   {
     "nombre": "Mejor por caja",
     "descripcion": "Caja x6 Botellas de 750cc",
-    "precio": 80000,
+    "precio": 84000,
     "imagen": "/images/brindando.jpeg"
   },
   {
